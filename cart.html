@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="et">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content=""> 
+        <meta name="author" content="">
+        <title>Ostukorv</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+        <!-- minu CSS -->
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    <body>
+        <!-- header algus -->
+        <header class="py-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 my-3 text-center"><a href="index.html"><img src="img/logo2.png" width="50%"></a></div>              
+                </div>          
+            </div>
+        </header>
+        <!-- header lõpp -->
+        <!-- navigatsioon algus -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Uued tooted</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vannitooted</a> 
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+                            <a class="dropdown-item" href="#">Vannisoolad</a> 
+                            <a class="dropdown-item" href="#">Vannipiimad</a> 
+                            <a class="dropdown-item" href="#">Vannipommid</a>
+                            <a class="dropdown-item" href="list.html">Seebid ja du&scaron;igeelid</a>
+                        </div> 
+                    </li> 
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kehahooldus</a> 
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+                            <a class="dropdown-item" href="#">Kehakreemid</a> 
+                            <a class="dropdown-item" href="#">Keha&otilde;lid</a> 
+                            <a class="dropdown-item" href="#">Kehakoorijad</a> 
+                            <a class="dropdown-item" href="#">Deodorandid</a> 
+                            <a class="dropdown-item" href="#">K&auml;te ja jalgade hooldus</a>  
+                        </div> 
+                    </li> 
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">N&auml;ohooldus</a> 
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+                            <a class="dropdown-item" href="#">Puhastus ja toniseerimine</a> 
+                            <a class="dropdown-item" href="#">Niisutus ja toitmine</a> 
+                            <a class="dropdown-item" href="#">Koorijad ja maskid</a> 
+                        </div> 
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="meist.html">Meist</a></li>
+                </ul>
+                <!-- search algus -->
+                <form class="form-inline m-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Otsi" aria-label="Search">
+                    <button class="btn btn-outline-white my-2 my-sm-0" type="submit"><svg class="lnr lnr-magnifier"><use xlink:href="#lnr-magnifier"></use></svg></button>
+                </form>
+                <!-- search lõpp -->
+            </div>
+            <!-- cart algus -->
+            <a href="cart.html"><button class="btn btn-dark my-2 my-sm-0" type="submit"><svg class="lnr lnr-cart"><use xlink:href="#lnr-cart"></use></svg></button></a>
+            <!-- cart lõpp -->
+        </nav>
+        <!-- navigatsioon lõpp -->
+        <!-- breadcrumb algus -->
+        <section>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-white my-2 ml-2">
+                    <li class="breadcrumb-item"><a href="index.html">Avaleht</a></li>
+                    <li class="breadcrumb-item active">Ostukorv</li>
+                </ol>
+            </nav>
+        </section>
+        <!-- breadcrumb lõpp -->
+        <!-- ostukorv algus -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex align-items-start flex-column">
+                        <div class="mb-auto p-2"><h4>Ostukorvis on 1 toode</h4></div>    
+                        <div class="mb-auto p-2 row">
+                            <div class="col-lg-6">
+                                <img src="img/soap.png" width="100%">
+                            </div>
+                            <div class="col-lg-6">
+                                <p>15.99&#8364;</p>
+                                <p>Toode 1</p>
+                                    <select class="form-control col-lg-5 form-sm" id="kogus">
+                                        <option>0</option>
+                                        <option selected="selected">1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                <br/>
+                            </div>            
+                        </div>
+                        <div class="p-2">
+                            <p>Tarne: <span class="text-info">tasuta</span></p>
+                            <p>Kokku: <span class="text-info">15.99&#8364;</span></p>
+                        </div>
+                    </div>
+                    <!-- andmeväljad algus -->
+                    <div class="col-lg-6">
+                        <div class="text-left">
+                            <div class="mb-auto pb-2">
+                                <h4>Tellija andmed</h4>
+                                <p class="text-secondary">Palun sisesta enda kontaktandmed.</p>
+                            </div>
+                            <div class="form-row text-info">
+                                <div class="form-group col-sm-6">
+                                    <label for="eesnimi">Eesnimi</label>
+                                    <input type="text" class="form-control" id="eesnimi">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="perenimi">Perenimi</label>
+                                    <input type="text" class="form-control" id="perenimi">
+                                </div>
+                            </div>
+                            <div class="form-row text-info">
+                                <div class="form-group col-sm-6">
+                                    <label for="linn">Linn</label>
+                                    <input type="text" class="form-control" id="linn">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="postikood">Postikood</label>
+                                    <input type="text" class="form-control" id="postikood">
+                                </div>
+                            </div>
+                            <div class="text-info">
+                                <div class="form-group">
+                                    <label for="aadress">Aadress</label>
+                                    <input type="text" class="form-control" id="aadress">
+                                </div>
+                            </div>
+                            <div class="text-info">
+                                <div class="form-group">
+                                    <label for="toimetusviis">Kättetoimetamise viis</label>
+                                    <select class="form-control text-muted" id="toimatamisviis">
+                                        <option value="pood">Tulen ise poodi järele</option>
+                                        <option value="automaat">Postiautomaati</option>
+                                        <option value="postkontor">Postkontorisse</option>
+                                        <option value="kuller">Kulleriga</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="text-muted">
+                                <div class="form-group">
+                                    <div>
+                                        <label for="" class="text-info">Makseviis</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="poes" value="option1">
+                                        <label class="form-check-label" for="poes">Kohapeal</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pangalink" value="option2">
+                                        <label class="form-check-label" for="pangalink">Pangalingiga</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="arve" value="option3">
+                                        <label class="form-check-label" for="arve">Arvega</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-4 mx-auto">
+                            <a href="kinnitus.html" class="btn btn-outline-info btn-block">Esita tellimus</a>
+                        </div>
+                    </div>    
+                    <!-- andmeväljad lõpp -->       
+                </div>   
+            </div>
+        </section>
+        <!-- ostukorv lõpp -->
+        <!-- jaluse algus -->
+        <footer class="bg-light">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row text-md-left text-center justify-content-md-start justify-content-center">
+                                    <svg class="lnr lnr-phone-handset mr-4"><use xlink:href="#lnr-phone-handset"></use></svg>
+                                    <h4 class="text-muted font-weight-light">5555 5555</h4>
+                                </div>
+                                <div class="row text-md-left text-center justify-content-md-start justify-content-center mt-md-0 mt-2">
+                                    <svg class="lnr lnr-envelope mr-4"><use xlink:href="#lnr-envelope"></use></svg>
+                                    <h4 class="text-muted font-weight-light">mail@pood.ee</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-md-right text-center mt-md-0 mt-4">
+                                <a href="#"><i class="fab fa-facebook-square fa-3x text-muted mx-3"></i></a>
+                                <a href="#"><i class="fab fa-instagram-square fa-3x text-muted mx-3"></i></a>
+                                <a href="#"><i class="fab fa-youtube-square fa-3x text-muted mx-3"></i></a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- jaluse lõpp -->       
+        <!-- jQuery, Popper.js, Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+        <script src="https://kit.fontawesome.com/ffa700a281.js" crossorigin="anonymous"></script>
+    </body>
+</html>         
